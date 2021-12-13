@@ -1,8 +1,12 @@
-import React from 'react'
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx, css } from '@emotion/react'
 
-const ButtonBase = ({ children }) => {
+import * as styles from './styles'
+
+const ButtonBase = ({ children, ...props }) => {
   return (
-    <button>
+    <button css={styles.base} {...props}>
       {children}
     </button>
   )

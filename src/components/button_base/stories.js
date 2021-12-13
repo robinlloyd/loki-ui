@@ -4,9 +4,9 @@ import ButtonBase from './index'
 
 export default {
   component: ButtonBase,
-  title: 'Button Base'
+  title: 'buttons'
 }
 
-const Template = args => <ButtonBase>Yo, I'm a button!</ButtonBase>
+const Template = args => <ButtonBase>Button for clicking</ButtonBase>
 
 export const Default = Template.bind({})
