@@ -41,5 +41,8 @@
   },
   "workspaces": [
     "components/*"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
