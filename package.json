@@ -1,5 +1,5 @@
 {
-  "name": "@loki-ui/monorepo",
+  "name": "@lokiui/monorepo",
   "scripts": {
     "build-storybook": "build-storybook",
     "build:lib": "rollup -c",

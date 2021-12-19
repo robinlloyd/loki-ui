@@ -1,5 +1,5 @@
 {
-  "name": "@loki-ui/button_base",
+  "name": "@lokiui/button_base",
   "version": "0.0.2-alpha.3",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
