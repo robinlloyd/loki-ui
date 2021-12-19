@@ -9,5 +9,8 @@
     "directory": "components/button_primary"
   },
   "private": false,
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
