@@ -1,11 +1,11 @@
 {
   "name": "@loki-ui/monorepo",
   "scripts": {
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "yarn build && npm publish",
-    "bump-pre": "npm version prerelease --preid=rc",
-    "build:lib": "rollup -c"
+    "build:lib": "rollup -c",
+    "lerna:changed": "lerna changed",
+    "release": "yarn build:lib && npm publish",
+    "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
