@@ -8,5 +8,6 @@
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "components/button_base"
   },
-  "private": false
+  "private": false,
+  "license": "MIT"
 }
