@@ -3,7 +3,8 @@ import { addDecorator } from '@storybook/react'
 
 import { Global, ThemeProvider } from '@emotion/react'
 
-import { globals, defaultTheme } from '../src/themes'
+import { globals } from '../themes/globals'
+import { defaultTheme } from '../themes/default'
 
 addDecorator((story) => (
   <>
