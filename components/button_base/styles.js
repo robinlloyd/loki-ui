@@ -7,5 +7,5 @@ export const base = css`
   line-height: 32px;
   padding: 0 16px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
 `
