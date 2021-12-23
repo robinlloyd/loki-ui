@@ -8,7 +8,6 @@
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "components/button_primary"
   },
-  "private": false,
   "license": "MIT",
   "publishConfig": {
     "access": "public"

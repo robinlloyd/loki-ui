@@ -9,7 +9,6 @@ import path from 'path'
 import { babel } from '@rollup/plugin-babel'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import { terser } from 'rollup-plugin-terser'
 
 async function main () {
   const config = []
@@ -47,8 +46,7 @@ async function main () {
           exclude: 'node_modules/**',
           presets: ['@babel/preset-react']
         }),
-        nodeResolve(), // Resolves third party modules
-        terser() // Minifies build - comment this out to see the size without minification
+        nodeResolve() // Resolves third party modules
       ]
     })
   })
