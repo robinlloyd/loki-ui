@@ -41,14 +41,14 @@ async function main () {
         }
       ],
       plugins: [
-        peerDepsExternal(),
+        // peerDepsExternal(),
         babel({
           babelHelpers: 'bundled',
           exclude: 'node_modules/**',
           presets: ['@babel/preset-react']
-        }),
-        nodeResolve(), // Resolves third party modules
-        terser() // Minifies build - comment this out to see the size without minification
+        })
+        // nodeResolve(), // Resolves third party modules
+        // terser() // Minifies build - comment this out to see the size without minification
       ]
     })
   })
