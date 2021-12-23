@@ -41,7 +41,7 @@ async function main () {
         }
       ],
       plugins: [
-        // peerDepsExternal(),
+        peerDepsExternal(),
         babel({
           babelHelpers: 'bundled',
           exclude: 'node_modules/**',
