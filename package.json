@@ -4,7 +4,7 @@
     "build-storybook": "build-storybook",
     "build:lib": "rollup -c",
     "lerna:changed": "lerna changed",
-    "release": "yarn build:lib && npm publish",
+    "release": "yarn build:lib && lerna publish",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {

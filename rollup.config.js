@@ -36,7 +36,7 @@ async function main () {
         {
           file: path.join(basePath, 'dist/index.es.js'),
           format: 'es',
-          exports: 'auto',
+          exports: 'named',
           sourcemap: true
         }
       ],
