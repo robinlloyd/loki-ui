@@ -4,7 +4,7 @@
     "build-storybook": "build-storybook",
     "build": "webpack",
     "lerna:changed": "lerna changed",
-    "release": "yarn build:lib && lerna publish",
+    "release": "yarn build && lerna publish",
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
