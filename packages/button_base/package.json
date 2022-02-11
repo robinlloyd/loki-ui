@@ -1,15 +1,13 @@
 {
   "name": "@loki-ui/button_base",
   "version": "0.0.2-alpha.7",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "components/button_base"
   },
   "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "exports": {
+    ".": "./dist/index.js"
   }
 }
