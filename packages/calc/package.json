@@ -14,7 +14,7 @@
     "access": "public"
   },
   "exports": {
-    ".": "./dist/index.js",
+    ".": "./calc/dist/index.js",
     "./add": "./add/dist/index.js",
     "./subtract": "./subtract/dist/index.js"
   }
