@@ -7,6 +7,9 @@
     "directory": "components/button_primary"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./dist/index.js"
   }

@@ -7,6 +7,9 @@
     "directory": "components/button_base"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./dist/index.js"
   }

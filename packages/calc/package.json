@@ -10,6 +10,9 @@
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "packages/calc"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./dist/index.js",
     "./add": "./add/dist/index.js",
