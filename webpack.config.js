@@ -1,5 +1,12 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
+const cleanOptions = {
+  verbose: true,
+  dry: false,
+  cleanOnceBeforeBuildPatterns: ['**/dist']
+}
 
 module.exports = {
   mode: 'production',
@@ -38,5 +45,9 @@ module.exports = {
   //   minimize: false
   // },
 
-  externals: [nodeExternals()]
+  externals: [nodeExternals()],
+
+  plugins: [
+    new CleanWebpackPlugin(cleanOptions)
+  ]
 }
