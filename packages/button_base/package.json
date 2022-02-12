@@ -1,12 +1,13 @@
 {
   "name": "@loki-ui/button_base",
-  "version": "0.0.2-alpha.12",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "components/button_base"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

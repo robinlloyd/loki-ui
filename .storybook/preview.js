@@ -1,18 +1,15 @@
-import React from 'react'
+import { Fragment } from 'react'
 import { addDecorator } from '@storybook/react'
 
 import { Global, ThemeProvider } from '@emotion/react'
 
-import { globals } from '../themes/globals'
-import { defaultTheme } from '../themes/default'
+import { baseStyles } from '../packages/base_styles'
 
 addDecorator((story) => (
-  <>
-    <ThemeProvider theme={defaultTheme}>
-      <Global styles={globals} />
-      {story()}
-    </ThemeProvider>
-  </>
+  <Fragment>
+    <Global styles={baseStyles} />
+    {story()}
+  </Fragment>
 ))
 
 

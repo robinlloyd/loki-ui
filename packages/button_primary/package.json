@@ -1,12 +1,13 @@
 {
-  "name": "@loki-ui/button_primary",
-  "version": "0.0.2-alpha.14",
+  "name": "@loki-ui/button-primary",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/robinlloyd/loki-ui",
     "directory": "components/button_primary"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

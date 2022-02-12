@@ -1,8 +1,10 @@
 import React from 'react'
 
+import * as styles from './styles'
+
 const ButtonBase = ({ children, ...props }) => {
   return (
-    <button {...props}>
+    <button css={styles.buttonBase}>
       {children}
     </button>
   )
