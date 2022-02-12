@@ -1,5 +1,5 @@
 import React from 'react'
-import ButtonBase from '@loki-ui/button_base'
+import ButtonBase from '@loki-ui/button-base'
 
 const ButtonPrimary = ({ children, ...props }) => {
   return (
