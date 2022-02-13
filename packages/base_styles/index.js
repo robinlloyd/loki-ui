@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { css } from '@emotion/react'
 
 // Taken from https://www.joshwcomeau.com/css/custom-css-reset/
