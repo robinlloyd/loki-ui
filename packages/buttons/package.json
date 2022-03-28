@@ -1,0 +1,22 @@
+{
+  "name": "@loki-ui/buttons",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robinlloyd/loki-ui",
+    "directory": "components/buttons"
+  },
+  "peerDependencies": {
+    "@emotion/react": "11.8.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./button_base": "./dist/button_base.js"
+  }
+}

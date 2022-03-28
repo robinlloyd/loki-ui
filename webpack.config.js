@@ -1,32 +1,25 @@
 const path = require('path')
 const nodeExternals = require('webpack-node-externals')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const cleanOptions = {
-  verbose: true,
-  dry: false,
-  cleanOnceBeforeBuildPatterns: ['**/dist']
-}
+const { getEntry } = require('./webpack.helpers.js')
 
 module.exports = {
   mode: 'production',
 
   entry: {
-    button_base: './packages/button_base/index.js',
-    button_primary: './packages/button_primary/index.js',
-    'calc/calc': './packages/calc/index.js',
-    'calc/add': './packages/calc/add/index.js',
-    'calc/subtract': './packages/calc/subtract/index.js'
+    ...getEntry('base_styles', 'index'),
+
+    ...getEntry('buttons', 'index'),
+    ...getEntry('buttons', 'button_base')
   },
 
   output: {
-    globalObject: 'this', // Ensures packages can run on server and client https://webpack.js.org/configuration/output/#outputglobalobject
+    globalObject: 'this',
     library: {
       name: 'loki-ui',
       type: 'umd'
     },
-    path: path.resolve(__dirname, 'packages'),
-    filename: '[name]/dist/index.js'
+    path: path.resolve(__dirname, 'packages')
   },
 
   module: {
@@ -41,13 +34,5 @@ module.exports = {
     ]
   },
 
-  // optimization: {
-  //   minimize: false
-  // },
-
-  externals: [nodeExternals()],
-
-  plugins: [
-    new CleanWebpackPlugin(cleanOptions)
-  ]
+  externals: [nodeExternals()]
 }

@@ -2,3 +2,4 @@ node_modules
 .yarn
 lerna-debug.log
 coverage
+dist
